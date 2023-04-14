@@ -1,6 +1,7 @@
 package com.generation.blogpessoaal.model;
 
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -61,6 +62,11 @@ public class Postagem {
 
 	public void setData(LocalDateTime data) {
 		this.data = data;
+	}
+
+	public Optional<Postagem> map(Object object) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
