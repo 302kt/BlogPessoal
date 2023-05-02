@@ -120,7 +120,7 @@ public class UsuarioControllerTest {
 	@DisplayName("Deve logar em um usuario usuario")
 	public void deveLogarUsuario() {
 		usuarioService.cadastrarUsuario(new Usuario
-				(0L, "Nicolle", "nicolle@email.com.br", "13465278", "-"));
+				(0L, "Mari", "mari@mari.com.br", "12345678", "-"));
 		HttpEntity<UsuarioLogin> corpoRequisicao = new HttpEntity<UsuarioLogin>(
 				new UsuarioLogin(0L, "", "nicolle@email.com.br", "13465278", "", ""));
 		ResponseEntity<UsuarioLogin> corpoResposta = testRestTemplate.exchange("/usuarios/logar", HttpMethod.POST,
