@@ -74,10 +74,5 @@ public class UsuarioController {
 		
 	}
 	
-	/*@GetMapping("/{usuario}")
-	public ResponseEntity<List<Usuario>> getByUsuario(@PathVariable String usuario){
-		return ResponseEntity.ok(usuarioRepository.findAll());
-				
-	}*/
 	
 }
